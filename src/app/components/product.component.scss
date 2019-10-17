@@ -1,0 +1,62 @@
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    position: relative;
+    margin: 0 10px 20px 0;
+    width: 290px;
+
+    .card_image{
+        margin-bottom: -5px;
+    }
+    img {
+        border-radius: 0;
+        width: 100%;
+        height: 250px;
+    }
+    .card_body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 10px;
+        background: rgba(233, 186, 235, 0.657);
+        font-weight: bold;
+        color: rgba(17, 15, 17, 0.9);
+        text-decoration: none;
+    }
+    .product_title{
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(80, 80, 80);
+        font-size: 26px;
+        line-height: 30px;
+    }
+    em {
+        color: rgba(255, 255, 255, 0.897);
+        text-shadow: 1px 1px 1px rgb(80, 80, 80);
+        font-size: 30px;
+        line-height: 32px;
+        align-self: flex-end;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        &:hover {
+            &::after {
+                content: "Remove product";
+                position: absolute;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 14px;
+                line-height: 16px;
+                width: 100px;
+                height: 25px;
+                color: gray;
+                top: 25%;
+                right: 90%;
+            }
+        }
+    }
+}

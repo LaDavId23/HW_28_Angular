@@ -1,0 +1,20 @@
+<li class="product_card">
+    <a href="#" class="card_image">
+        <img [src]="product.image" alt="">
+    </a>
+    <a href="#" class="card_body">
+        <h3 class="product_title">
+            {{product.name}}
+        </h3>
+        <div class="product_item">
+            Item: {{product.item}}
+        </div>
+        <div class="product_brand">
+            Brand name: {{product.brand}}
+        </div>
+        <div class="product_price">
+            Price: {{product.price}}$
+        </div>
+    </a>
+    <em class="fa fa-times" (click)="remove(index)"></em>
+</li>
